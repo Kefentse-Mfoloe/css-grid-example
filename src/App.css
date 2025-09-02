@@ -8,17 +8,15 @@
                        "footer";
 }
 
-@media only screen and (min-width: 600px) {
-  #grid-container {
-    grid-template-columns: 50px 1fr;
-    grid-template-areas: "sidebar content"
-                         "footer footer";
-  }
-}
-
 .aside {
   grid-area: sidebar;
   background-color: blue;
+  justify-items: center;
+  align-items: center;
+}
+
+.aside i {
+  display: none;
 }
 
 .main {
@@ -29,4 +27,20 @@
 .footer {
   grid-area: footer;
   background-color: darkgray;
+}
+
+@media only screen and (min-width: 600px) {
+  #grid-container {
+    grid-template-columns: 50px 1fr;
+    grid-template-areas: "sidebar content"
+                         "footer footer";
+  }
+
+  .aside {
+    display: grid;
+  }
+
+  .aside i {
+    display: grid;
+  }
 }

@@ -43,6 +43,14 @@
                        "dtls";
 }
 
+.main_body > div {
+  display: flex;
+}
+
+.main_body > div p {
+    flex: 0 0 25%;
+  }
+
 @media screen and (max-width: 600px) {
   .main_header {
     justify-items: center;

@@ -1,6 +1,6 @@
 import albumCover from '../../assets/default_album_cover.jpg'
 
-export default function MainHeader(){
+export default function MainHeader({ headerContent }) {
     return (
       <div className="main_header">
         <div className="img">
@@ -8,9 +8,11 @@ export default function MainHeader(){
         </div>
         <section className="details">
           <div>
-            <p>good kid, m.A.A.d city (Deluxe)</p>
-            <p className="sm-hide">Kendrick Lamar</p>
-            <p className="sm-hide">2012 . 1 hr 32 min . 17 songs</p>
+            <p>{headerContent.album}</p>
+            <p className="sm-hide">{headerContent.artist}</p>
+            <p className="sm-hide">
+              {headerContent.year} . {headerContent.duration} . {headerContent.songs} songs
+            </p>
           </div>
           <div>
             <i className="fa fa-play"> &nbsp;Play all</i>

@@ -4,9 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import albumCover from './assets/default_album_cover.jpg'
 import Sidebar from './components/sidebar'
-import MainHeader from './components/maincontent/mainHeader'
-import MainBody from './components/maincontent/mainBody'
-import Main from './components/maincontent/main'
+import Main from './components/main_components/main'
 
 function App() {
   return (
